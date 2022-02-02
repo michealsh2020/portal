@@ -1,0 +1,307 @@
+/*
+
+Written by Adam Dale
+
+To-Do
+
+-Import GK Fonts???
+
+GK Palette
+
+Light blue: #00a7e1;
+Dark blue: #004b85;
+Light Grey: #dcdcdc;
+Dark Grey: #323232;
+
+*/
+
+@font-face {
+    font-family: 'Gotham-Light';
+    src: url("Gotham-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url("Gotham-Medium.otf") format("opentype");
+}
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url("Gotham-Bold.otf") format("opentype");
+}
+
+body {
+    margin:0px;
+    padding:0px;
+    font-family: 'Gotham-Light', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    font-size: 16px;
+    color:#444444;
+}
+
+/* Standard Theme */
+
+.services {
+    background-color:#dcdcdc;
+}
+.services__heading {
+    color:#004b85;
+}
+.box__inside__icon {
+    color:#004b85;
+}
+.box__inside__title {
+    color:#004b85;
+}
+.box__inside__anchor,
+.box__inside__anchor:visited {
+    background-color: #00a7e1;
+}
+.box__inside__anchor:hover {
+    background-color: #004b85;
+}
+
+/* GK Alt Theme */
+
+.gk-alt-theme .services {
+    color:#ccc;
+    background-color:#4d4d4d;
+}
+.gk-alt-theme .services__heading {
+    color:#ccc;
+}
+.gk-alt-theme .box__inside__icon {
+    color:#ccc;
+}
+.gk-alt-theme .box__inside__title {
+    color:#ccc;
+}
+.gk-alt-theme .box__inside__anchor,
+.gk-alt-theme .box__inside__anchor:visited {
+    background-color: #ffb900;
+}
+.gk-alt-theme .box__inside__anchor:hover {
+    background-color: #e6a800;
+}
+.gk-alt-theme .box {
+    border:1px solid #ccc;
+    background-color: #333333;
+}
+
+/* Utils */
+
+.u-centered {
+    margin:0px auto;
+    width:auto;
+}
+.u-offset {
+    margin-top:150px;
+}
+.u-list > li {
+    margin:0.9375rem 0rem;
+    line-height: 1.375rem;
+}
+
+/* Header */
+
+header {
+    padding:1.25rem 0rem;
+    background-color:#ffffff;
+    position:fixed;
+    width:100%;
+    top:0px;
+}
+.header {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding:0rem 1.25rem;
+}
+.header__img {
+    width: 200px;
+}
+.header__inside {
+    flex-grow: 1;
+}
+.header__inside--left {
+    text-align: left;
+}
+.header__inside--right {
+    text-align: right;
+}
+.header__heading {
+    padding:0px;
+    margin:0px;
+    color:#004b85;
+    font-size:1.25rem;
+    font-family: 'Gotham-Bold', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+/* Notification */
+
+.notification {
+    color:#ffffff;
+    font-family: 'Gotham-Medium', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+.notification--red {
+    background-color:#721c24;
+}
+.notification--amber {
+    background-color: #856404;
+}
+.notification--normal {
+    background-color: #323232;
+}
+.notification--i {
+    background-color: #004b85;
+}
+.notification__body {
+    padding:1.875rem 1.875rem;
+}
+
+.message {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.message__inside {
+    flex-grow: 1;
+}
+.message__inside--left {
+    text-align: left;
+}
+.message__inside--right {
+    text-align: right;
+}
+.message__anchor,
+.message__anchor:visited {
+    padding:0.9375rem;
+    text-decoration: none;
+}
+.message__anchor--red {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+.message__anchor--amber {
+    background-color: #fff3cd;
+    color: #856404;
+}
+.message__anchor--i {
+    background-color: #00a7e1;
+    color: #ffffff;
+}
+
+/* Self-services */
+
+.services {
+    padding:0.9375rem 0rem;
+}
+.services__heading {
+    text-align: center;
+    padding:1.25rem 0rem;
+    font-family: 'Gotham-Bold', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+.container {
+    display:flex;
+    flex-wrap: wrap;
+}
+.item {
+    flex-basis: 100%;
+}
+.service {
+    padding:0rem 0.9375rem;
+    margin:0.9375rem 0rem;
+}
+.box {
+    background-color:#ffffff;
+    padding:1.875rem;
+    display:flex;
+    flex-wrap: wrap;
+    height:175px;
+    align-items: center;
+}
+.box--no-fixed-height {
+    height: auto;
+}
+.box__inside {
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+.box__inside--left {
+    text-align: center;
+}
+.box__inside__icon {
+    text-align: center;
+    display:inline-block;
+    font-size: 3.125rem;
+    font-weight: bold;
+}
+.box__inside__title {
+    margin:0rem;
+    padding:1.875rem 0rem;
+    font-family: 'Gotham-Medium', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+.box__inside__anchor,
+.box__inside__anchor:visited {
+    padding:1.25rem;
+    color:#ffffff;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    font-family: 'Gotham-Medium', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+.box__inside__anchor:hover {
+    transition: 0.5s;
+}
+
+/* Footer */
+
+footer {
+    background-color:#323232;
+    color:#ffffff;
+    text-align: center;
+    padding:1.875rem;
+}
+
+/* Sticky Footer */
+
+html.sticky-footer {
+    position:relative;
+    min-height: 100%;
+}
+html.sticky-footer body {
+    margin-bottom: 60px;
+    background-color: #dcdcdc;
+}
+html.sticky-footer .box--no-fixed-height {
+    min-height: 420px;
+}
+html.sticky-footer footer {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    padding: 0px;
+}
+
+/* Styling for bigger screens */
+
+@media (min-width: 1200px) {
+    .header {
+        padding:0rem 0rem;
+    }
+    .header__heading {
+        font-size:1.75rem;
+    }
+    .u-centered {
+        width:1200px;
+    }
+    .notification__red {
+        padding:1.875rem 0rem;
+    }
+    .container {
+        margin-left:-15px;
+        margin-right:-15px;
+    }
+    .item {
+        flex-basis: 50%;
+    }
+}

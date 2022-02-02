@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157516369-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-157516369-1');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KXWKX5N');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="author" content="Adam Dale">
+    <!-- GK CSS -->
+    <link rel="stylesheet" href="gk-selfservice.css">
+    <!-- Office Fabric UI CSS for Icons -->
+    <link rel="stylesheet"
+        href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.min.css" />
+    <!-- Check out this URL for a list of Icons
+    https://developer.microsoft.com/en-us/fabric#/styles/web/icons
+    -->
+
+    <!-- Service Desk -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- End Service Desk -->
+
+    <title>Self-service Portal</title>
+
+</head>
+
+<body onload="gk.checkNotifications()">
+
+
+    <header>
+        <div class="header u-centered">
+            <div class="header__inside header__inside--left">
+                <img src="gk-logo.svg" alt="GK Logo" class="header__img" />
+            </div>
+
+            <div class="header__inside header__inside--right">
+                <h1 class="header__heading">Self-service Portal</h1>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KXWKX5N" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <main>
+
+        <!-- DYNAMIC NOTIFICATION AREA -->
+
+        <section id="notification" class="u-offset">
+
+            <!-- WHAT IS DYNAMICALLY RENDERED BY JS - UNCOMMENT TO SEE -->
+            <div class="notification notification--normal" role="alert">
+                <div class="notification__body u-centered">
+                    <div class="message">
+                        <div class="message__inside message__inside--left"><span>No issues reported.</span></div>
+                        <div class="message__inside message__inside--right">
+                            <a title="SERVICE HEALTH"
+                                href="https://globalknowledge4.sharepoint.com/sites/automation/it-notifications-process/Lists/servicehealth/AllItems.aspx"
+                                class="message__anchor message__anchor--i" target="_blank">SERVICE HEALTH</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END WHAT IS DYNAMICALLY RENDERED BY JS - UNCOMMENT TO SEE -->
+
+        </section>
+
+        <!-- END DYNAMIC NOTIFICATION AREA -->
+
+        <section class="services">
+
+            <!--<h2 class="services__heading">Self-service options</h2>-->
+
+            <div class="u-centered">
+
+                <div class="container">
+
+                    <!-- COMPLETE SERVICE BLOCK MOCKUP -->
+                    <!--<div class="item">
+                        <div class="service">
+                            <div class="box">
+                                <div class="box__inside box__inside--left self">
+                                    <i class="ms-Icon ms-Icon--Unlock box__inside__icon"></i>
+                                    <h3 class="box__inside__title">Unlock your Account</h3>
+                                    <a title="#" href="#" class="box__inside__anchor">LAUNCH SERVICE</a>
+                                </div>
+                                <div class="box__inside box__inside--right">
+                                    <ul class="u-list">
+                                        <li>Some information about Service description 1</li>
+                                        <li>Some information about Service description 2</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                    <!-- END COMPLETE SERVICE BLOCK MOCKUP -->
+
+                    <!-- SERVICE BLOCK -->
+                    <div class="item">
+                        <div class="service">
+                            <div class="box">
+                                <div class="box__inside box__inside--left self">
+                                    <i class="ms-Icon ms-Icon--Unlock box__inside__icon"></i>
+                                    <h3></h3>
+                                    <a title="PASSWORD RESET" href="https://aka.ms/sspr" target="_blank"
+                                        class="box__inside__anchor">PASSWORD RESET</a>
+                                </div>
+                                <div class="box__inside box__inside--right">
+                                    <ul class="u-list">
+                                        <li>Reset your password or unlock your account.</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SERVICE BLOCK -->
+
+                    <!-- SERVICE BLOCK -->
+                    <div class="item">
+                        <div class="service">
+                            <div class="box">
+                                <div class="box__inside box__inside--left self">
+                                    <i class="ms-Icon ms-Icon--LifesaverLock box__inside__icon"></i>
+                                    <h3></h3>
+                                    <a title="BITLOCKER RECOVERY"
+                                        href="https://apps.powerapps.com/play/16dcf90a-e285-41cf-9876-8d63aab89b3f?tenantId=defa54f3-4877-425b-8965-eb5fbfd108ce"
+                                        target="_blank" class="box__inside__anchor">BITLOCKER RECOVERY</a>
+                                </div>
+                                <div class="box__inside box__inside--right">
+                                    <ul class="u-list">
+                                        <li>Recover your BitLocker key.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SERVICE BLOCK -->
+
+                    <!-- SERVICE BLOCK -->
+                    <div class="item">
+                        <div class="service">
+                            <div class="box">
+                                <div class="box__inside box__inside--left self">
+                                    <i class="ms-Icon ms-Icon--BlockContact box__inside__icon"></i>
+                                    <h3></h3>
+                                    <a title="MFA BYPASS"
+                                        href="https://apps.powerapps.com/play/0a472d41-19d3-4b2f-ac0a-923b1c0c31d1?tenantId=defa54f3-4877-425b-8965-eb5fbfd108ce"
+                                        target="_blank" class="box__inside__anchor">MFA
+                                        BYPASS</a>
+                                </div>
+                                <div class="box__inside box__inside--right">
+                                    <ul class="u-list">
+                                        <li>Bypass MFA on a colleague's account for 12 hours.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SERVICE BLOCK -->
+
+                    <!-- SERVICE BLOCK -->
+                    <div class="item">
+                        <div class="service">
+                            <div class="box">
+                                <div class="box__inside box__inside--left self">
+                                    <i class="ms-Icon ms-Icon--PC1 box__inside__icon"></i>
+                                    <h3></h3>
+                                    <a title="ACCESS VDI" href="https://rdweb.wvd.microsoft.com/arm/webclient/index.html"
+                                        target="_blank" class="box__inside__anchor">ACCESS VDI</a>
+                                </div>
+                                <div class="box__inside box__inside--right">
+                                    <ul class="u-list">
+                                        <li>Access your applications and data directly from your browser.</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SERVICE BLOCK -->
+
+                    <!-- SERVICE BLOCK -->
+                    <div class="item">
+                        <div class="service">
+                            <div class="box">
+                                <div class="box__inside box__inside--left self">
+                                    <i class="ms-Icon ms-Icon--OfficeLogo box__inside__icon"></i>
+                                    <h3></h3>
+                                    <a title="OFFICE 365" href="https://portal.office.com" target="_blank"
+                                        class="box__inside__anchor">OFFICE 365</a>
+                                </div>
+                                <div class="box__inside box__inside--right">
+                                    <ul class="u-list">
+                                        <li>Access your Office 365 applications, including email, SharePoint, Teams and
+                                            OneDrive data.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SERVICE BLOCK -->
+
+                    <!-- SERVICE BLOCK -->
+                    <div class="item">
+                        <div class="service">
+                            <div class="box">
+                                <div class="box__inside box__inside--left self">
+                                    <i class="ms-Icon ms-Icon--DeveloperTools box__inside__icon"></i>
+                                    <h3></h3>
+                                    <a title="PRODUCTIVITY TOOLS" href="./productivity.html" target="_blank"
+                                        class="box__inside__anchor">PRODUCTIVITY TOOLS</a>
+                                </div>
+                                <div class="box__inside box__inside--right">
+                                    <ul class="u-list">
+                                        <li>Various productivity tools: User Onboarding and Offboarding, Shared Mailbox
+                                            Creation and Access, Update Personal Details, Add Product license, and
+                                            Resource access.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SERVICE BLOCK -->
+
+                    <!-- SERVICE BLOCK -->
+                    <div class="item">
+                        <div class="service">
+                            <div class="box">
+                                <div class="box__inside box__inside--left self">
+                                    <i class="ms-Icon ms-Icon--Articles box__inside__icon"></i>
+                                    <h3></h3>
+                                    <a title="KNOWLEDGE BASE" href="https://kb.globalknowledge.com" target="_blank"
+                                        class="box__inside__anchor">KNOWLEDGE BASE</a>
+                                </div>
+                                <div class="box__inside box__inside--right">
+                                    <ul class="u-list">
+                                        <li>Discover answers within the company Knowledge Base.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SERVICE BLOCK -->
+
+                    <!-- SERVICE BLOCK -->
+                    <div class="item">
+                        <div class="service">
+                            <div class="box">
+                                <div class="box__inside box__inside--left self">
+                                    <i class="ms-Icon ms-Icon--PeopleAlert box__inside__icon"></i>
+                                    <h3></h3>
+                                    <a title="OUT OF HOURS" href="./ooh.html" target="_blank"
+                                        class="box__inside__anchor">CONTACT SUPPORT</a>
+                                </div>
+                                <div class="box__inside box__inside--right">
+                                    <ul class="u-list">
+                                        <li>Submit new ticket</li>
+                                        <li>Out of hours details</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SERVICE BLOCK -->                                       
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <span>&copy; Global Knowledge</span>
+    </footer>
+
+    <script>
+
+        var gk = {
+
+            checkNotifications: function () {
+
+                gk.service_url = 'https://sanortheuropegslrs01gk.blob.core.windows.net/$web/message.json?_=' + new Date().getTime();
+
+                gk.xmlhttp = new XMLHttpRequest();
+
+                gk.xmlhttp.open('GET', gk.service_url);
+                gk.xmlhttp.send();
+
+                gk.xmlhttp.onload = function () {
+
+                    if (this.status != 200) {
+
+                        return;
+
+                    }
+                    else {
+
+                        gk.response = JSON.parse(this.responseText);
+
+                        if (gk.response.show) {
+
+                            gk.notification = "<div class=\"notification " + gk.response.class + "\" role=\"alert\"><div class=\"notification__body u-centered\"><div class=\"message\"><div class=\"message__inside message__inside--left\"><span>" + gk.response.message + "</span></div><div class=\"message__inside message__inside--right\"><a title=\"ACTIVE ISSUES\" href=\" " + gk.response.active_issues + " \" class=\"message__anchor " + gk.response.anchor_css + "\" target=\"_blank\">ACTIVE ISSUES</a></div></div></div></div>";
+
+                            document.getElementById("notification").innerHTML = gk.notification;
+
+                        }
+
+                    }
+
+                }
+
+                gk.xmlhttp.onerror = function () {
+
+                    return;
+
+                }
+
+            }
+
+        }
+
+    </script>
+
+    <script src="https://servicedesk.globalknowledge.com/assets/chat/chat.min.js"></script>
+    <script>
+        $(function () {
+            new ZammadChat({
+                background: '#132121',
+                fontSize: '12px',
+                chatId: 1
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

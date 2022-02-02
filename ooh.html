@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en" class="sticky-footer">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157516369-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-157516369-1');
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KXWKX5N');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="author" content="Adam Dale">
+    <!-- GK CSS -->
+    <link rel="stylesheet" href="gk-selfservice.css">
+    <!-- Office Fabric UI CSS for Icons -->
+    <link rel="stylesheet"
+        href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-js/1.4.0/css/fabric.min.css" />
+    <!-- Check out this URL for a list of Icons
+    https://developer.microsoft.com/en-us/fabric#/styles/web/icons
+    
+    -->
+
+    <!-- Service Desk -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- End Service Desk -->
+
+    <title>Self-service Portal</title>
+
+</head>
+
+<body onload="gk.checkNotifications()">
+
+
+    <header>
+        <div class="header u-centered">
+            <div class="header__inside header__inside--left">
+                <img src="gk-logo.svg" alt="GK Logo" class="header__img" />
+            </div>
+
+            <div class="header__inside header__inside--right">
+                <h1 class="header__heading">Self-service Portal</h1>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KXWKX5N" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <main>
+
+        <!-- DYNAMIC NOTIFICATION AREA -->
+
+        <section id="notification" class="u-offset">
+
+            <!-- WHAT IS DYNAMICALLY RENDERED BY JS - UNCOMMENT TO SEE -->
+            <div class="notification notification--normal" role="alert">
+                <div class="notification__body u-centered">
+                    <div class="message">
+                        <div class="message__inside message__inside--left"><span>No issues reported.</span></div>
+                        <div class="message__inside message__inside--right">
+                            <a title="SERVICE HEALTH"
+                                href="https://globalknowledge4.sharepoint.com/sites/automation/it-notifications-process/Lists/servicehealth/AllItems.aspx"
+                                class="message__anchor message__anchor--i" target="_blank">SERVICE HEALTH</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END WHAT IS DYNAMICALLY RENDERED BY JS - UNCOMMENT TO SEE -->
+
+        </section>
+
+        <!-- END DYNAMIC NOTIFICATION AREA -->
+
+        <section class="services">
+
+            <!--<h2 class="services__heading">Self-service options</h2>-->
+
+
+            <div class="u-centered">
+
+                <div class="container">
+
+                    <!-- COMPLETE SERVICE BLOCK MOCKUP -->
+                    <div class="item">
+                        <div class="service">
+                            <div class="box box--no-fixed-height">
+                                <div class="box__inside box__inside--right">
+                                    <h3 class="box__inside__title">In-hours support</h3>
+                                    The Service Desk operates during the following hours:<br><br>
+                                    <b>Central European Time</b><br>
+                                    Sunday: 0900 - 1700<br>
+                                    Monday - Friday: 0800 - 0000<br>
+                                    Saturday: Closed<br><br>
+
+                                    <b>Eastern Standard Time</b><br>
+                                    Sunday: 0300 - 1100<br>
+                                    Monday - Friday: 0200 - 1800<br>
+                                    Saturday: Closed<br><br>
+<!-- 
+                                    <button id="feedback-form">Submit ticket</button>
+                                    <script id="zammad_form_script"
+                                        src="https://servicedesk.globalknowledge.com/assets/form/form.js"></script>
+                                    
+                                    <script>
+                                        $(function () {
+                                            $('#feedback-form').ZammadForm({
+                                                messageTitle: 'Submit new ticket',
+                                                messageSubmit: 'Submit',
+                                                messageThankYou: 'Thank you for your inquiry (#%s)! We\'ll contact you as soon as possible.',
+                                                showTitle: true,
+                                                modal: true,
+                                                attachmentSupport: true
+                                            });
+                                        });
+                                    </script>
+                                    -->
+                                    <p><b>Email:</b> <a href="mailto:help@globalknowledge.com">help@globalknowledge.com</a><br>
+                                    <p><b>Phone:</b> <a href="tel:+1-919-469-7090">+1-919-469-7090</a></p>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END COMPLETE SERVICE BLOCK MOCKUP -->
+
+                    <!-- COMPLETE SERVICE BLOCK MOCKUP -->
+                    <div class="item">
+                        <div class="service">
+                            <div class="box box--no-fixed-height">
+                                <div class="box__inside box__inside--right">
+                                    <h3 class="box__inside__title">Out-of-hours support</h3>
+                                    Out-of-hours emergency support is available for all <b>critical, revenue
+                                        impacting</b> issues.<br><br>
+                                    Please contact the following phone number, and, if prompted, leave a voice mail:
+                                    <p><b>Phone:</b> <a href="tel:+1-984-275-0026">+1-984-275-0026</a></p>
+
+                                    <br><br><br><br><br><br><br><br><br><br>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END COMPLETE SERVICE BLOCK MOCKUP -->
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <span>&copy; Global Knowledge</span>
+    </footer>
+
+    <script>
+
+        var gk = {
+
+            checkNotifications: function () {
+
+                gk.service_url = 'https://sanortheuropegslrs01gk.blob.core.windows.net/$web/message.json?_=' + new Date().getTime();
+
+                gk.xmlhttp = new XMLHttpRequest();
+
+                gk.xmlhttp.open('GET', gk.service_url);
+                gk.xmlhttp.send();
+
+                gk.xmlhttp.onload = function () {
+
+                    if (this.status != 200) {
+
+                        return;
+
+                    }
+                    else {
+
+                        gk.response = JSON.parse(this.responseText);
+
+                        if (gk.response.show) {
+
+                            gk.notification = "<div class=\"notification " + gk.response.class + "\" role=\"alert\"><div class=\"notification__body u-centered\"><div class=\"message\"><div class=\"message__inside message__inside--left\"><span>" + gk.response.message + "</span></div><div class=\"message__inside message__inside--right\"><a title=\"ACTIVE ISSUES\" href=\" " + gk.response.active_issues + " \" class=\"message__anchor " + gk.response.anchor_css + "\" target=\"_blank\">ACTIVE ISSUES</a></div></div></div></div>";
+
+                            document.getElementById("notification").innerHTML = gk.notification;
+
+                        }
+
+                    }
+
+                }
+
+                gk.xmlhttp.onerror = function () {
+
+                    return;
+
+                }
+
+            }
+
+        }
+
+    </script>
+
+    <script src="https://servicedesk.globalknowledge.com/assets/chat/chat.min.js"></script>
+    <script>
+        $(function () {
+            new ZammadChat({
+                background: '#132121',
+                fontSize: '12px',
+                chatId: 1
+            });
+        });
+    </script>
+
+</body>
+
+</html>
